@@ -7,15 +7,15 @@
       <button mat-icon-button color="primary" routerLink="/dvds/{{i}}"> 
         <mat-icon>more_horiz</mat-icon>
       </button>    
-      <button mat-icon-button color="primary" >
+      <button mat-icon-button color="primary" (click)="goDetails(i, d)">
         <mat-icon>info</mat-icon>
       </button>     
-      <button mat-icon-button color="accent" >
+      <button mat-icon-button color="accent" (click)="remove(i)">
         <mat-icon>delete_outline</mat-icon>
       </button>    
     </mat-list-item>
   </mat-list>
   
-  <button mat-fab color="primary" class="add-button">
+  <button mat-fab color="primary" class="add-button" routerLink="/dvds/new">
     <mat-icon>add</mat-icon>
   </button>  
